@@ -1,0 +1,22 @@
+<script>
+    function pat(rows)
+    {
+        for(let i=0;i<rows;i++)
+        {
+            let rp=" ";
+            for (let j=0;j<=i;j++)
+            {
+                if((i+j)%2===0)
+                    {
+                        rp+="1"
+                    }
+                else
+                {
+                    rp+="0"
+                }
+            }
+            console.log(rp)
+        }
+    }
+pat(5)
+</script>
