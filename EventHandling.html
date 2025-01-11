@@ -1,0 +1,23 @@
+<!-- https://sites.google.com/view/fullstack-part1/scripting
+onClick
+on mouse over
+on mouse out
+on mouse down
+on mouse up
+on mouse move -->
+
+
+                 <!-- METHOD-1 -->
+<body>
+<h1 onClick="this.innerHTML='Text changed'">click on me</h1>
+</body>
+
+
+                 <!-- METHOD-2 -->
+<h1 id="dh1" onClick="d1()">Click on text</h1>
+<script>
+    function d1(){
+        document.getElementById("dh1").innerHTML="Text changed"
+    }
+</script>
+

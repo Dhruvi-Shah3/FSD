@@ -1,0 +1,14 @@
+<div onmousedown="mdown(this)" onmouseup="mup(this)"
+style="background-color: blue;width:70px;height:30px;">Click Me</div>
+<script>
+    function mdown(e)
+    {
+        e.style.backgroundColor="yellow"
+        e.innerHTML="click"
+    }
+    function mup(e)
+    {
+        e.style.backgroundColor="Pink"
+        e.innerHTML="Release"
+    }
+</script>

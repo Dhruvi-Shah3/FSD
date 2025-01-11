@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script>
+        function cls()
+    {
+        cl=document.getElementsByClassName("a")
+        for(i=0;i<cl.length;i++)
+        {
+            cl[i].innerHTML="changed"
+            cl[i].style.color="tomato"
+            cl[i].style.backgroundColor="cyan"
+
+        }
+
+        c2=document.getElementsByClassName("b")
+        for(i=0;i<c2.length;i++)
+        {
+            c2[i].innerHTML="changed"
+            c2[i].style.color="green"
+            c2[i].style.backgroundColor="pink"
+
+        }
+    }
+    </script>
+</head>
+<body>
+        <p class="a">  hiiiii  </p>
+        <p>  hellooo  </p>
+        <p class="b">  dhruvi  </p>
+        <p>  good morning  </p>
+    <input type="button" value="click" onClick="cls()">
+</body>
+</html>
+
+
+write a js script which convert uppercase and lowercase from return case onClick

@@ -1,0 +1,39 @@
+<!-- write a js script which convert uppercase and lowercase from return case onClick -->
+<html>
+
+<head>
+    <script>
+        function uppercase()
+    {
+        cl=document.getElementsByClassName("a")
+        for(i=0;i<cl.length;i++)
+        {
+            
+            cl[i].style.color="tomato"
+            cl[i].style.backgroundColor="cyan"
+             cl[i].style.textTransform="upperCase"
+
+        }
+    }
+        function lowercase()
+    {
+        cl=document.getElementsByClassName("a")
+        for(i=0;i<cl.length;i++)
+        {
+           
+            cl[i].style.color="tomato"
+            cl[i].style.backgroundColor="cyan"
+            cl[i].style.textTransform="lowerCase"
+        }
+    }
+
+    </script>
+</head>
+<body>
+        <p class="a"> HIIIIII </p>
+    <input type="button" value="Upper" onClick="uppercase()">
+    <input type="button" value="Lower" onClick="lowercase()">
+</body>
+</html>
+
+

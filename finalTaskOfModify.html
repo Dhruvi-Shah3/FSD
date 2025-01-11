@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script>
+        function cls()
+    {
+        cl=document.getElementsByTagName("p")
+        for(i=0;i<cl.length;i++)
+        {
+            cl[i].innerHTML="changed"
+        
+        }
+
+        c2=document.getElementsByClassName("a")
+        for(i=0;i<c2.length;i++)
+        {
+            
+            c2[i].style.color="green"
+            c2[i].style.backgroundColor="yellow"
+            c2[i].style.fontSize="30px"
+
+        }
+
+        c3=document.getElementById("b")
+            c3.style.backgroundColor="pink"
+
+        
+    }
+    </script>
+</head>
+<body>
+        <p>  hellooo  </p>
+        <p class="a">  hiiiii  </p>
+        <p id="b">  dhruvi  </p>
+    <input type="button" value="click" onClick="cls()">
+</body>
+</html>
