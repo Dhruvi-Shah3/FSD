@@ -1,0 +1,35 @@
+<!-- to validate username and password
+1-paswd length must be between 6-12 character.
+2-username sgld not start with _,@ and any number.
+3-both field must not be blank  -->
+    <script>
+        function fun()
+        {
+            Pat=/^_|^@|^\d/
+            u=document.getElementById("t1").value //Username
+            v=document.getElementById("t2").value //pass
+            console.log(u.length)
+            console.log(v.length)
+            if(u.length==0 & v.length==0)
+                {
+                    alert("Not Blank")
+                }
+            else if(u.length<=6 || u.length>12 )
+                {
+                    alert("length must from 6 to 12")
+                }
+            else if(Pat,test(u))
+            {
+                alert("avoid_,@,any number")
+            }
+            else
+            {
+                alert("Perfect")
+            }
+        }
+    </script>
+        password<input type="password" id="t1">
+        Username<input type="text" id="t2">
+        <input type="submit" onclick="fun()">
+        
+        

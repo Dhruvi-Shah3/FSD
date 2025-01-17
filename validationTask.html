@@ -1,0 +1,31 @@
+<!-- design a login form using js for a password field
+    following validation has to performede 
+    1-minimum length of psswd of length 8
+    2-must have special character
+    3-if paaswd length is less than 8 letters alert will appear with msg length must be 8
+    4-if special charater is not include than alert will appear paswd must be storng add one special character -->
+    <script>
+        function fun()
+        {
+            Pat=/\W/
+            u=document.getElementById("t1").value 
+            console.log(u.length)
+            if(u.length<8)
+                {
+                    alert("length must be 8")
+                }
+            else if(Pat.test(u)==0)
+                {
+                    alert("paswd must be storng add one special character")
+                }
+            else
+            {
+                alert("strong")
+            }
+
+        }
+    </script>
+        <input type="password" id="t1">
+        <input type="submit" onclick="fun()">
+        
+        
