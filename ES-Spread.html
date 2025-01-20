@@ -1,0 +1,17 @@
+<script>
+    function fun()
+    {
+        const n1=[23,55,62,87]
+        const n2=[15,88,68,72]
+
+        const newn=[...n1,...n2]
+        let maxvalue=Math.max(...newn)
+        console.log(newn)
+        console.log(...newn)
+        document.getElementById('demo').innerHTML=maxvalue
+
+    }
+</script>
+    <p onclick="fun()">max value</p>
+    <p id="demo"></p>
+7
