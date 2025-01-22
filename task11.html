@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <style>
+        #output {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="myForm">
+        <input type="text" id="inputField" placeholder="Type something...">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1 id="output">Dynamic Content</h1>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const inputField = document.getElementById('inputField');
+        const output = document.getElementById('output');
+
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const inputValue = inputField.value; 
+            output.textContent = inputValue; 
+        });
+
+        inputField.addEventListener('input', function() {
+            inputField.style.color = 'red';
+            inputField.style.backgroundColor = 'yellow';
+        });
+
+        inputField.addEventListener('change', function() {
+            inputField.style.color = 'green';
+            inputField.style.backgroundColor = 'pink';
+        });
+
+        inputField.addEventListener('focus', function() {
+            inputField.style.color = 'blue';
+            inputField.style.backgroundColor = 'lightblue';
+        });
+
+        output.addEventListener('mousedown', function() {
+            output.style.fontSize = '30px';
+            output.style.textTransform = 'uppercase';
+        });
+
+        output.addEventListener('mouseup', function() {
+            output.style.fontSize = '50px';
+            output.style.textTransform = 'lowercase';
+        });
+
+        output.addEventListener('mouseover', function() {
+            output.style.textDecoration = 'underline';
+            output.style.color = 'red';
+        });
+
+        output.addEventListener('mouseout', function() {
+            output.style.textDecoration = 'overline';
+            output.style.color = 'blue';
+        });
+
+      
+        inputField.addEventListener('keydown', function(event) {
+            console.log(`Key pressed: ${event.key}`);
+        });
+
+        inputField.addEventListener('keyup', function(event) {
+            console.log(`Key released: ${event.keyCode}`);
+        });
+    </script>
+
+</body>
+</html>

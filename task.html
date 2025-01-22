@@ -1,0 +1,20 @@
+<!-- WRITE A es6 script to calculate distance between 2 points take 2 point object consistent object x,y,z members first object should be use to call distance fun and 2 obj should be pass inside and argument -->
+<script>
+    class distance{
+        constructor(x,y,z){
+            this.x=x;
+            this.y=y;
+            this.z=z;
+
+        }
+        dist=(p)=>{
+            let ans=Math.pow((this.x-p.x),z)+Math.pow((this.y-p.y),z)+Math.pow((this.z-p.z),z)
+            let d=Math.sqrt(ans)
+            return d
+            let p1=new point(1,1,1)
+            let P=new point(2,2,2)
+            console.log(`distance=${p1.dist(p)}`)
+        }
+    }
+
+</script>
