@@ -1,0 +1,39 @@
+<!-- Write a es 6 script that creates a class time having members hour minutes and seconds create two time objects t1 and t2 and add both the time object show that it should return in third time object name t third time object should have hour minutes and sceonds such that after addtition if seconds exceeds 60 then minute should be incremented  also if minutes exceeds 60 then hours should me incremented-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Time {
+            constructor(hour, min, sec) {
+                this.hour = hour;
+                this.min = min;
+                this.sec = sec;
+                }
+                timer() {
+                    var t=new Time()
+                    t.hour=t1.hour+t2.hour
+                    t.min=t1.min+t2.min
+                    t.sec=t1.sec+t2.sec
+                    if(t.sec>60){
+                        t.sec%=60
+                        t.min++
+                    }
+                    if(t.min>60){
+                        t.min%=60
+                        t.hour++
+                    }
+                    return t
+                    }
+        }
+        var t1=new Time(1,50,50)
+        var t2=new Time(2,30,50)
+        console.log(t1.timer())
+    </script>
+ </head>
+ <body>
+    
+ </body>
+ </html>
