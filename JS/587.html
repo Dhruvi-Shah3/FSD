@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1() {
+            let c = document.getElementById('a')
+            c.style.backgroundColor = 'red';
+            c.innerHTML="Hello World";
+            c.style.fontStyle='italic';
+            c.style.fontSize="50px";
+        }
+
+        function f2(){
+            let c = document.getElementById('a');
+            c.style.color='red'
+        }
+
+        function f3(){
+            let d = document.getElementById('a');
+            d.style.color='blue'
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <h1 onclick="f1()" id="a">Hello</h1>
+    <input type="button" value="Red" onclick="f2()">
+    <input type="button" value="Blue" onclick="f3()">
+</body>
+
+</html>
