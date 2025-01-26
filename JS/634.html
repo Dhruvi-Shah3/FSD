@@ -1,0 +1,33 @@
+<script>
+    class Time {
+        constructor(hours, minutes, seconds) {
+            this.hours = hours;
+            this.minutes = minutes;
+            this.seconds = seconds;
+        }
+        addTime(otherTime) {
+            // Add seconds, minutes, and hours separately
+            this.seconds += otherTime.seconds;
+            this.minutes += otherTime.minutes;
+            this.hours += otherTime.hours;
+            // Adjust minutes and hours if seconds exceed 60
+            if (this.seconds >= 60) {
+                this.seconds -= 60;
+                this.minutes += 1;
+            }
+            // Adjust hours if minutes exceed 60
+            if (this.minutes >= 60) {
+                this.minutes -= 60;
+                this.hours += 1;
+            }
+            // Return the updated current time object
+            return this;
+        }
+    }
+    // Example usage
+    const time1 = new Time(3, 45, 30);
+    const time2 = new Time(2, 15, 45);
+    // Add two time objects
+    time1.addTime(time2);
+    console.log("Resultant Time:", time1);
+</script>

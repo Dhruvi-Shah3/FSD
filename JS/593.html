@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1() {
+            let a = document.getElementById("username").value; // Aiya .value kem lakhyu kem ke input che jema user eni username lakhse 
+            let b = document.getElementById("password").value;
+
+            pat = /^[@_]/ // hve aiya ek j pat kem lidhu kem ke password ni length direct length function thi mali jaay 
+
+            if (b.length > 6 && b.length < 12) // etle b maa password hse so eni length 6 karta moti ane 12 karta nani hovi joiye 
+            {
+                if (pat.test(a)) {
+                    alert("Username Is Wrong"); // aiya jo apde if ni andar wrong kem lakhyu kem ke pat su che ke ^[@_] this start thse eno matlab ejj thaay ne ane apde question maa undhu puchyu che ke naa thavu joiye khabar padi ???? saaru etle username start thato hse toh apde tya wrong karai daisu simple ane else maa right okay!!!!
+                } else {
+                    alert("Everything is Okay");
+                }
+            }else{
+                alert("Password Is Wrong")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="f1()">  
+        UserName<input type="text" id="username">
+        Password <input type="password" id="password">
+        <input type="submit" value="Submit" onclick="f1()">
+    </form>
+</body>
+
+</html>

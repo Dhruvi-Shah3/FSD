@@ -1,0 +1,17 @@
+<script>
+    class point {
+        constructor(x, y, z) {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+        }
+        dist = (p2) => {
+            let ans = Math.pow((p1.x - p2.x), 2) + Math.pow((p1.y - p2.y), 2) + Math.pow((p1.zp2.z), 2);
+            let dist = Math.sqrt(ans);
+            return dist;
+        }
+    }
+    let p1 = new point(5, 5, 5);
+    let p2 = new point(4, 4, 4);
+    console.log(`distance = ${ p1.dist(p2) }`)
+</script>

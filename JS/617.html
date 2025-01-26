@@ -1,0 +1,21 @@
+<script>
+    const computeOddEvenSum = (...numbers) => {
+        let oddSum = 0;
+        let evenSum = 0;
+        for (const number of numbers) {
+            if (number % 2 === 0) {
+                // Even number
+                evenSum += number;
+            } else {
+                // Odd number
+                oddSum += number;
+            }
+        }
+        return { oddSum, evenSum };
+    };
+    // Example usage with the first 10 natural numbers
+    const first10NaturalNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const { oddSum, evenSum } = computeOddEvenSum(...first10NaturalNumbers);
+    console.log(`Sum of odd numbers: ${oddSum}`);
+    console.log(`Sum of even numbers: ${evenSum}`);
+</script>

@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <form onsubmit="validateForm()">
+        <input type="text" id="integerInput" title="Please enter a 4-digit integer" required>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function validateForm() {
+            pat = /^\d{4}$/
+            const inputValue = document.getElementById("integerInput").value
+            if (pat.test(inputValue)) {
+                alert("Perfect")
+            }
+            else {
+                alert("Not Perfect")
+            }
+        }
+    </script>
+</body>
+
+</html>
